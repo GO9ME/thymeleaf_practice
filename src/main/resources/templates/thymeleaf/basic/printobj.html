@@ -58,6 +58,14 @@
 		<td th:text="불합격" th:unless="${p.jumsu >= 90}"></td>
 	</tr>
 	</table>
+	
+	<h2>4. 하이퍼링크로 요청하기(get방식으로 데이터 보내기)</h2>
+	<!-- 파라미터를 하이퍼링크로 요청하면서 보내기
+	th:href "@{요청 path(파라미터값, 파라미터면=값)}" 
+	요청 path = requestmapping명
+	-->
+	<a th:href="@{/exam/th/formtest(id=${person.id)}"> 하이퍼링크로 요청보내기 </a>
+	
 
 </body>
 </html>
