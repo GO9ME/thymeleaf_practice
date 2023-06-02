@@ -30,6 +30,23 @@ public class ThymeleafTestController {
 		System.out.println("erp : " + erp);
 		return "thymeleaf/basic/attr_test";
 	}
+	@GetMapping("/fragmenttest")
+	public String fragmenttest() {
+		
+		return "thymeleaf/basic/main";
+	}
+	
+	@GetMapping("/layout")
+	public String layouttest() {
+		
+		return "thymeleaf/product/productread";
+	}
+	@GetMapping("/layout2")
+	public String layout2() {
+		
+		return "thymeleaf/product/productlist";
+	}
+	
 	@GetMapping("/iftest")
 	public String iftest(Model model) {
 		model.addAttribute("myval",120);

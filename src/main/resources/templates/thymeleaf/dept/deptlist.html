@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{thymeleaf/layout/deptTemplate}">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -12,7 +14,8 @@
 
 </head>
 <body>
-	<div>
+
+	<div layout:fragment="content">
 		<h3>부서목록</h3>
 		<div style="padding-top: 30px">
 
